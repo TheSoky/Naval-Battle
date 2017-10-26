@@ -379,8 +379,8 @@ Transform:
   m_LocalPosition: {x: -3.220735, y: 7.1932173, z: -12.799791}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 502360843}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &379348574
 MonoBehaviour:
@@ -412,6 +412,7 @@ GameObject:
   - component: {fileID: 502360842}
   - component: {fileID: 502360844}
   - component: {fileID: 502360845}
+  - component: {fileID: 502360846}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -444,8 +445,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 379348573}
   - {fileID: 344853644}
+  - {fileID: 850461312}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -475,6 +476,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TiltFactor: 1
   TiltDurationFactor: 0.5
+--- !u!114 &502360846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502360841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1209e37f2d9e1be439ab406146a20083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 1.5
+  MinSpeed: 0
+  MaxSpeed: 3
+  TurningPoint: {fileID: 850461312}
+  TurningSpeed: 1
 --- !u!1001 &807706266
 Prefab:
   m_ObjectHideFlags: 0
@@ -512,7 +529,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 0f27c7096577dcc43a8d88b7fb946757, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 0f27c7096577dcc43a8d88b7fb946757, type: 3}
       propertyPath: m_Layer
@@ -601,3 +618,31 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f27c7096577dcc43a8d88b7fb946757, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &850461311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 850461312}
+  m_Layer: 8
+  m_Name: TurningPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &850461312
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 850461311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 3.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 502360843}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
