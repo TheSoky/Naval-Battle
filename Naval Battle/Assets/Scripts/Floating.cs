@@ -23,6 +23,8 @@ public class Floating : MonoBehaviour {
 
         if (tRigidBody != null) {
             _rigidBodies.Add(tRigidBody);
+            tRigidBody.useGravity = false;
+            tRigidBody.velocity = Vector3.zero;
         }
     }
 
