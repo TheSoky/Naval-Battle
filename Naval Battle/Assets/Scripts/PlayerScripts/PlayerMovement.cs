@@ -18,15 +18,17 @@ public class PlayerMovement : MonoBehaviour {
     private float TurningSpeed = 0.01f;
     [SerializeField]
     private float MaxTurningSpeed = 1.0f;
-    [SerializeField]
-    private float MaxTurningAngle = 35.0f;
+    //[SerializeField]
+    //private float MaxTurningAngle = 35.0f;
 
-    [Header("TEST Read Only")]
+    /*                                                      //Testing Variables
+    [Header("TEST Read Only")]  
     public Vector3 CurrentMovement = Vector3.zero;
     public Vector3 CurrentAngularVelocity = Vector3.zero;
     public float MaxZSpeed = 0.0f;
     public float MaxXSpeed = 0.0f;
     public Vector3 LocalMovement = Vector3.zero; 
+    */
 
     private float _movementForward;
     private float _movementTurning;
@@ -40,7 +42,6 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Update() {
         _movementForward = Input.GetAxisRaw("Vertical");
-        //_movementForward = Mathf.Clamp(_movementForward, 0.0f, 1.1f);
         _movementTurning = Input.GetAxisRaw("Horizontal");  
 
         _rigidbody.AddForceAtPosition(_transform.right * TurningSpeed * _movementTurning, TurningPoint.position, ForceMode.Impulse);
@@ -71,8 +72,7 @@ public class PlayerMovement : MonoBehaviour {
         angularVelocity.x = 0.0f;
         _rigidbody.angularVelocity = angularVelocity;
         
-
-        //TODO ocistiti ovo skupa s testnim read only varijablama
+        /*                                  //testing variable setters
         LocalMovement = localVelocity;
         CurrentAngularVelocity = _rigidbody.angularVelocity;
         CurrentMovement = _rigidbody.velocity;
@@ -82,6 +82,7 @@ public class PlayerMovement : MonoBehaviour {
         if (_rigidbody.velocity.x > MaxXSpeed) {
             MaxXSpeed = _rigidbody.velocity.x;
         }
+        */
     }
 
 }

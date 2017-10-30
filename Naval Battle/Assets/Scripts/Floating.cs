@@ -33,10 +33,10 @@ public class Floating : MonoBehaviour {
         foreach (Rigidbody rigidBodyElement in _rigidBodies) {
 
             if (rigidBodyElement == null) {
-                _rigidBodies.Remove(rigidBodyElement); // posprema rigidbody liste ako je objekt unisten bez da je collider izasao iz trigera
+                _rigidBodies.Remove(rigidBodyElement); // in case object was destroyed without its collider leaving this trigger
             }
 
-            if (rigidBodyElement.gameObject.layer == _floatingLayer) {          //Nije moglo sa switch jer je gameObject.layer const a nase layermaske nisu
+            if (rigidBodyElement.gameObject.layer == _floatingLayer) {          //couldn't do with "switch" because gameObject.layer is const, layermask isn't
                 rigidBodyElement.AddForce(Vector3.up * FloatFactor * Mathf.Cos(Time.timeSinceLevelLoad), ForceMode.Impulse);
             }
             else if (rigidBodyElement.gameObject.layer == _sinkingLayer) {

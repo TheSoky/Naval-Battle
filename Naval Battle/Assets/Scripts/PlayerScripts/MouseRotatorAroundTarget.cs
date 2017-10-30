@@ -26,7 +26,6 @@ public class MouseRotatorAroundTarget : MonoBehaviour {
     private float _velocityX = 0.0f;
     private float _velocityY = 0.0f;
     
-    // Use this for initialization
     void Start() {
         Vector3 angles = transform.eulerAngles;
         _rotationYAxis = angles.y;
