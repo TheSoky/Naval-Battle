@@ -910,7 +910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 502360843}
   ShootingSide: {fileID: 170961449}
-  Speed: 0.75
+  Speed: 100
+  TurningSpeed: 1
   MaxSpeed: 3.5
   DistanceToKeep: 30
   SlowDownSpeed: 0.5

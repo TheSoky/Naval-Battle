@@ -11,6 +11,8 @@ public class EnemyMovement : MonoBehaviour {
     [SerializeField]
     private float Speed = 0.75f;
     [SerializeField]
+    private float TurningSpeed = 1.0f;
+    [SerializeField]
     private float MaxSpeed = 3.5f;
     [SerializeField]
     private float DistanceToKeep = 20.0f;
@@ -37,10 +39,14 @@ public class EnemyMovement : MonoBehaviour {
         _distanceToTarget = Vector3.Distance(transform.position, Target.position);
         if (_distanceToTarget > DistanceToKeep) {
             _timer = 0.0f;
-            _transform.LookAt(Target);
+
+            // instead of _transform.LookAt(Target); to get smooth rotation
+            _transform.rotation = Quaternion.Lerp(_transform.rotation, Quaternion.LookRotation(Target.position -_transform.position), TurningSpeed * Time.deltaTime);
+
             _rigidbody.AddForce(transform.forward * Speed);
             Vector3 localVelocity = _transform.InverseTransformDirection(_rigidbody.velocity);
             localVelocity.z = Mathf.Clamp(localVelocity.z, 0.0f, MaxSpeed);
+            localVelocity.x = 0.0f;
             _xSpeed = localVelocity.x;
             _zSpeed = localVelocity.z;
             _rigidbody.velocity = _transform.TransformDirection(localVelocity);
