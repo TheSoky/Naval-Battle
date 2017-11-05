@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour {
         _rigidbody.AddForceAtPosition(_transform.right * TurningSpeed * _movementTurning, TurningPoint.position, ForceMode.Impulse);
         _rigidbody.AddForce(_transform.forward * Speed * _movementForward, ForceMode.Force);
 
-        /*Vector3 velocity = _rigidbody.velocity;     //nemoguce direktno pristupiti _rigidbody.velocity.z da se clamp-a u limit
+        /*Vector3 velocity = _rigidbody.velocity;     //gives global velocity while local coordinates are needed
         velocity.z = Mathf.Clamp(velocity.z, -MaxSpeed, MaxSpeed);
         velocity.x = Mathf.Clamp(velocity.x, -MaxSpeed, MaxSpeed);
         _rigidbody.velocity = velocity;*/
@@ -65,9 +65,12 @@ public class PlayerMovement : MonoBehaviour {
         rotation.x = 0.0f;
         _transform.localRotation = Quaternion.Euler(rotation);
         */
-        
+
+        float MovementZPercent = localVelocity.z / MaxSpeed;
+
         Vector3 angularVelocity = _rigidbody.angularVelocity;
-        angularVelocity.y = Mathf.Clamp(angularVelocity.y, -MaxTurningSpeed, MaxTurningSpeed);
+            
+        angularVelocity.y = Mathf.Clamp(angularVelocity.y, -MaxTurningSpeed * MovementZPercent, MaxTurningSpeed * MovementZPercent);
         angularVelocity.z = 0.0f;
         angularVelocity.x = 0.0f;
         _rigidbody.angularVelocity = angularVelocity;
