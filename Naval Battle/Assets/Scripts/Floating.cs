@@ -19,12 +19,15 @@ public class Floating : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        Rigidbody tRigidBody = other.GetComponent<Rigidbody>();
+        if (other.gameObject.tag != "Cannonball") {
 
-        if (tRigidBody != null) {
-            _rigidBodies.Add(tRigidBody);
-            tRigidBody.useGravity = false;
-            tRigidBody.velocity = Vector3.zero;
+            Rigidbody tRigidBody = other.GetComponent<Rigidbody>();
+
+            if (tRigidBody != null) {
+                _rigidBodies.Add(tRigidBody);
+                tRigidBody.useGravity = false;
+                tRigidBody.velocity = Vector3.zero;
+            }
         }
     }
 
