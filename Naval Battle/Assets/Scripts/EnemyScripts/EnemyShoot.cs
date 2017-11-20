@@ -4,52 +4,52 @@ using UnityEngine;
 
 [RequireComponent(typeof(EnemyMovement))]
 public class EnemyShoot : MonoBehaviour {
-    
-    [SerializeField]
-    private GameObject Cannonball;
-    [SerializeField]
-    private List<Transform> ShootingPoints = new List<Transform>();
-    [SerializeField]
-    private float SecondsBetweenShots = 3.0f;
-    [SerializeField]
-    private float MinPower = 1000.0f;
-    [SerializeField]
-    private float MaxPower = 1500.0f;
 
-    private Transform _transform;
-    private bool _shouldShoot = false;
+	[SerializeField]
+	private GameObject Cannonball;
+	[SerializeField]
+	private List<Transform> ShootingPoints = new List<Transform>();
+	[SerializeField]
+	private float SecondsBetweenShots = 3.0f;
+	[SerializeField]
+	private float MinPower = 1000.0f;
+	[SerializeField]
+	private float MaxPower = 1500.0f;
 
-    public void StartShooting() {
-        _shouldShoot = true;
-        StartCoroutine(Shoot());
-    }
+	private Transform _transform;
+	private bool _shouldShoot = false;
 
-    public void StopShooting() {
-        _shouldShoot = false;
-    }
+	public void StartShooting() {
+		_shouldShoot = true;
+		StartCoroutine(Shoot());
+	}
 
-    private void Awake() {
-        _transform = transform;
-    }
+	public void StopShooting() {
+		_shouldShoot = false;
+	}
 
-    private IEnumerator Shoot() {
-        while (_shouldShoot) {
-            foreach (Transform shootingPoint in ShootingPoints) {
-                float power = Random.Range(MinPower, MaxPower);
+	private void Awake() {
+		_transform = transform;
+	}
 
-                GameObject cannonballClone = Instantiate(Cannonball, shootingPoint.position, Quaternion.identity);
-                cannonballClone.transform.SetParent(_transform);
+	private IEnumerator Shoot() {
+		while (_shouldShoot) {
+			foreach (Transform shootingPoint in ShootingPoints) {
+				float power = Random.Range(MinPower, MaxPower);
 
-                Rigidbody CannonballRigidBody = cannonballClone.GetComponent<Rigidbody>();
-                CannonballRigidBody.AddForce(shootingPoint.forward * power);
+				GameObject cannonballClone = Instantiate(Cannonball, shootingPoint.position, Quaternion.identity);
+				cannonballClone.transform.SetParent(_transform);
 
-                yield return new WaitForSeconds(SecondsBetweenShots);
+				Rigidbody CannonballRigidBody = cannonballClone.GetComponent<Rigidbody>();
+				CannonballRigidBody.AddForce(shootingPoint.forward * power);
 
-            }
-            yield return new WaitForSeconds(SecondsBetweenShots);
+				yield return new WaitForSeconds(SecondsBetweenShots);
 
-        }
-        yield return null;
-    }
+			}
+			yield return new WaitForSeconds(SecondsBetweenShots);
+
+		}
+		yield return null;
+	}
 
 }
