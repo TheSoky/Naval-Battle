@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d19a10853486f594d87edf7f9c08132d
-timeCreated: 1511179604
+guid: c890efb2da27c084d88645deb1b7c0c3
+timeCreated: 1511217654
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -35,7 +35,7 @@ ModelImporter:
     100054: Plane_004
     100056: Plane_005
     100058: Plane_006
-    100060: Plane_007
+    100060: Plane_008
     400000: Cube
     400002: Cube_000
     400004: Cube_001
@@ -66,7 +66,7 @@ ModelImporter:
     400054: Plane_004
     400056: Plane_005
     400058: Plane_006
-    400060: Plane_007
+    400060: Plane_008
     2300000: Cube
     2300002: Cube_000
     2300004: Cube_001
@@ -96,7 +96,7 @@ ModelImporter:
     2300052: Plane_004
     2300054: Plane_005
     2300056: Plane_006
-    2300058: Plane_007
+    2300058: Plane_008
     3300000: Cube
     3300002: Cube_000
     3300004: Cube_001
@@ -126,8 +126,8 @@ ModelImporter:
     3300052: Plane_004
     3300054: Plane_005
     3300056: Plane_006
-    3300058: Plane_007
-    4300000: Plane_007
+    3300058: Plane_008
+    4300000: Plane_008
     4300002: Plane_006
     4300004: Plane_005
     4300006: Plane_004
@@ -164,72 +164,72 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: 43b2652ef8212ac49bda1e15e63a0f16, type: 2}
+    second: {fileID: 2100000, guid: bf19a80675c9f114085ffef424942be3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_002
-    second: {fileID: 2100000, guid: cfa7a547e0530f845ba1c500e4df168f, type: 2}
+    second: {fileID: 2100000, guid: cc8705669c9d6904396b541e1653c554, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_003
-    second: {fileID: 2100000, guid: f0c31727db4c38841978d0393705f96e, type: 2}
+    second: {fileID: 2100000, guid: d6f04c24a11b97f4d9bbf89defb064ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_004
-    second: {fileID: 2100000, guid: 5dd3922b693439e4cb4ede67f1d029ab, type: 2}
+    second: {fileID: 2100000, guid: 5fd223ea65d180144a14dcffb7aea641, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_005
-    second: {fileID: 2100000, guid: ee05adae1fdc1d7419984f00a66deeb7, type: 2}
+    second: {fileID: 2100000, guid: 1e63383862b498f49af32e47e9c7ef7b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_007
-    second: {fileID: 2100000, guid: 843b8c81501335d4ba0f290cdbe31ca8, type: 2}
+    second: {fileID: 2100000, guid: 3fed90981f1dcff43b2806656d85e333, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_010
-    second: {fileID: 2100000, guid: 589073ad6115e4d498700260b3e25dd5, type: 2}
+    second: {fileID: 2100000, guid: 076fe26088db7d04180ea2bef92fc9d5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_013
-    second: {fileID: 2100000, guid: 22ffc518dccb37641a2ab834c3e437d1, type: 2}
+    second: {fileID: 2100000, guid: 45523d13f8d0ddd428d03815f32247a8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_014
-    second: {fileID: 2100000, guid: 2668012ddf5db444a90e4d382ba1ce82, type: 2}
+    second: {fileID: 2100000, guid: 336c224a45e1bf844947fbfa7a240021, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Rub_broda
-    second: {fileID: 2100000, guid: fed75e12b8343be4582154f7564f27dd, type: 2}
+    second: {fileID: 2100000, guid: 9e43ccc975ff4c64e93fd6af876f03e1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Top
-    second: {fileID: 2100000, guid: 87ec05cd498087645a961edf36c27197, type: 2}
+    second: {fileID: 2100000, guid: ef8036b4e88744543bd91097f67914b8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Trup_broda
-    second: {fileID: 2100000, guid: 36dc816157af17448a4cfb31ec2d0c90, type: 2}
+    second: {fileID: 2100000, guid: 68cd907445e8b84488f6bd06988bfa51, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Trup_topa
-    second: {fileID: 2100000, guid: a53d832ec6137414ca9d6d1dfac829c1, type: 2}
+    second: {fileID: 2100000, guid: 620a53ed8c01e344381c8ff11229adce, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: jedro
-    second: {fileID: 2100000, guid: 51ad45e2d491f4e42bf11d2a95ff21c8, type: 2}
+    second: {fileID: 2100000, guid: 8cdf0ee9f9266284ba9da769c4f5bfd8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

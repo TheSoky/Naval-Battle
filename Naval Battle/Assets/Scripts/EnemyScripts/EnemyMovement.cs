@@ -18,6 +18,9 @@ public class EnemyMovement : MonoBehaviour {
 	private float DistanceToKeep = 20.0f;
 	[SerializeField]
 	private float SlowDownSpeed = 0.5f;
+	[Header("Editor only:")]
+	[SerializeField]
+	private Color GizmosColor;
 
 	private Rigidbody _rigidbody;
 	private Transform _transform;
@@ -85,6 +88,7 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	private void OnDrawGizmos() {
+		Gizmos.color = GizmosColor;
 		Gizmos.DrawWireSphere(transform.position, DistanceToKeep);
 	}
 

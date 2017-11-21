@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 492}
+  m_MinSize: {x: 950, y: 471}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1600
     height: 817
-  m_MinSize: {x: 950, y: 492}
+  m_MinSize: {x: 950, y: 471}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1600
     height: 767
-  m_MinSize: {x: 911, y: 442}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 909, y: 421}
+  m_MaxSize: {x: 22004, y: 10000}
   vertical: 0
-  controlID: 6724
+  controlID: 1649
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,10 +132,10 @@ MonoBehaviour:
     y: 0
     width: 742
     height: 767
-  m_MinSize: {x: 202, y: 442}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 202, y: 421}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 6852
+  controlID: 1650
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,14 +368,14 @@ MonoBehaviour:
     width: 740
     height: 373
   m_SceneLighting: 1
-  lastFramingTime: 82.40409410269427
+  lastFramingTime: 11843.322550185174
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9800548, y: 5.820496, z: -2.756596}
+    m_Target: {x: 8.462384, y: 0.7698772, z: 14.318626}
     speed: 2
-    m_Value: {x: 0.9800548, y: 5.820496, z: -2.756596}
+    m_Value: {x: 8.462384, y: 0.7698772, z: 14.318626}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -398,9 +398,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13143836, y: 0.088787444, z: -0.011819575, w: -0.98726946}
+    m_Target: {x: -0.058671843, y: 0.07154665, z: -0.0042148586, w: -0.99570125}
     speed: 2
-    m_Value: {x: -0.13143836, y: 0.08878745, z: -0.011819576, w: -0.9872695}
+    m_Value: {x: -0.058671847, y: 0.07154665, z: -0.0042148586, w: -0.9957013}
   m_Size:
     m_Target: 22.563412
     speed: 2
@@ -566,9 +566,9 @@ MonoBehaviour:
     height: 746
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: ec8effff248fffff288fffffc0d1ffff00000000ba2c0000
+    m_SelectedIDs: 9efbffff
+    m_LastClickedID: -1122
+    m_ExpandedIDs: a0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -628,7 +628,8 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/Prefabs
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -639,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 42250000
     m_LastClickedID: 9538
-    m_ExpandedIDs: 00000000222a0000282a0000322a00004c2a0000782a0000802a0000062b00000c2b0000722b0000822b0000b82b0000bc2b0000c22b0000da2b0000f22b0000f62b0000262c00002a2c0000
+    m_ExpandedIDs: 00000000582700005e2700006a2700006c27000018280000522800005c2800006a2800006e280000742800008a280000a628000014290000b4290000be290000dc290000f8290000fc2900000e2a0000562a00005a2a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,10 +665,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 364}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000222a0000282a0000322a00004c2a0000782a0000802a0000062b00000c2b0000722b0000822b0000b82b0000bc2b0000c22b0000da2b0000f22b0000f62b0000262c00002a2c0000
+    m_ExpandedIDs: 00000000582700005e2700006a2700006c27000018280000522800005c2800006a2800006e280000742800008a280000a628000014290000b4290000be290000dc290000f8290000fc2900000e2a0000562a00005a2a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -748,7 +749,7 @@ MonoBehaviour:
     y: 92
     width: 371
     height: 746
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 582.9551}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 183

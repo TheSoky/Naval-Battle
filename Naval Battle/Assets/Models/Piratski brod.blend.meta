@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: 107f2ac8a32a3f34cab30f8dd80e87d3
+timeCreated: 1511208035
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cube_016
+    100002: Cube_017
+    100004: Cube_018
+    100006: Cube_019
+    100008: Cube_022
+    100010: Cube_023
+    100012: Cube_024
+    100014: Cube_025
+    100016: Cube_026
+    100018: Cube_027
+    100020: Cylinder_014
+    100022: Cylinder_015
+    100024: Cylinder_016
+    100026: Cylinder_018
+    100028: //RootNode
+    100030: Plane
+    100032: Plane_001
+    100034: Plane_002
+    100036: Plane_003
+    100038: Plane_004
+    100040: Plane_011
+    400000: Cube_016
+    400002: Cube_017
+    400004: Cube_018
+    400006: Cube_019
+    400008: Cube_022
+    400010: Cube_023
+    400012: Cube_024
+    400014: Cube_025
+    400016: Cube_026
+    400018: Cube_027
+    400020: Cylinder_014
+    400022: Cylinder_015
+    400024: Cylinder_016
+    400026: Cylinder_018
+    400028: //RootNode
+    400030: Plane
+    400032: Plane_001
+    400034: Plane_002
+    400036: Plane_003
+    400038: Plane_004
+    400040: Plane_011
+    2300000: Cube_016
+    2300002: Cube_017
+    2300004: Cube_018
+    2300006: Cube_019
+    2300008: Cube_022
+    2300010: Cube_023
+    2300012: Cube_024
+    2300014: Cube_025
+    2300016: Cube_026
+    2300018: Cube_027
+    2300020: Cylinder_014
+    2300022: Cylinder_015
+    2300024: Cylinder_016
+    2300026: Cylinder_018
+    2300028: Plane
+    2300030: Plane_001
+    2300032: Plane_002
+    2300034: Plane_003
+    2300036: Plane_004
+    2300038: Plane_011
+    3300000: Cube_016
+    3300002: Cube_017
+    3300004: Cube_018
+    3300006: Cube_019
+    3300008: Cube_022
+    3300010: Cube_023
+    3300012: Cube_024
+    3300014: Cube_025
+    3300016: Cube_026
+    3300018: Cube_027
+    3300020: Cylinder_014
+    3300022: Cylinder_015
+    3300024: Cylinder_016
+    3300026: Cylinder_018
+    3300028: Plane
+    3300030: Plane_001
+    3300032: Plane_002
+    3300034: Plane_003
+    3300036: Plane_004
+    3300038: Plane_011
+    4300000: Plane_002
+    4300002: Plane_004
+    4300004: Plane_003
+    4300006: Plane_001
+    4300008: Plane
+    4300010: Plane_011
+    4300012: Cube_027
+    4300014: Cube_026
+    4300016: Cube_025
+    4300018: Cube_024
+    4300020: Cube_023
+    4300022: Cube_022
+    4300024: Cylinder_018
+    4300026: Cube_019
+    4300028: Cube_018
+    4300030: Cube_017
+    4300032: Cylinder_016
+    4300034: Cylinder_015
+    4300036: Cube_016
+    4300038: Cylinder_014
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jedro_001
+    second: {fileID: 2100000, guid: db0028992e57c1441a131f3e49b75ba7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: bf19a80675c9f114085ffef424942be3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_011
+    second: {fileID: 2100000, guid: b365c29087822c546b79936e5434977f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_021
+    second: {fileID: 2100000, guid: 59f10a46dc8898240a2cac4c63e05246, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_027
+    second: {fileID: 2100000, guid: 9adabd0309167994ba45b1a89f81be10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_028
+    second: {fileID: 2100000, guid: 94bfbb01b86b3304db48a69dfee3356c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_029
+    second: {fileID: 2100000, guid: 5568394fcd68a5c4ea21bafd0ef44364, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_030
+    second: {fileID: 2100000, guid: c5a15fd854c62184bbd85922a2540e5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Piratski_brod_trup
+    second: {fileID: 2100000, guid: 7b821fc2796e5e64e84a2dce9f6ff960, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Straznja_strata_pirat_broda
+    second: {fileID: 2100000, guid: c72619ba191ce73479d47cf12d3b4fb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top
+    second: {fileID: 2100000, guid: ef8036b4e88744543bd91097f67914b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trup_topa
+    second: {fileID: 2100000, guid: 620a53ed8c01e344381c8ff11229adce, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
