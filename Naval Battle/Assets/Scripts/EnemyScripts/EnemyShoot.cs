@@ -15,6 +15,10 @@ public class EnemyShoot : MonoBehaviour {
 	private float MinPower = 1000.0f;
 	[SerializeField]
 	private float MaxPower = 1500.0f;
+	[SerializeField]
+	private AudioSource CannonSound;
+	[SerializeField]
+	private AudioClip CannonClip;
 
 	private Transform _transform;
 	private bool _shouldShoot = false;
@@ -36,6 +40,8 @@ public class EnemyShoot : MonoBehaviour {
 		while (_shouldShoot) {
 			foreach (Transform shootingPoint in ShootingPoints) {
 				float power = Random.Range(MinPower, MaxPower);
+
+				CannonSound.PlayOneShot(CannonClip);
 
 				GameObject cannonballClone = Instantiate(Cannonball, shootingPoint.position, Quaternion.identity);
 				cannonballClone.transform.SetParent(_transform);

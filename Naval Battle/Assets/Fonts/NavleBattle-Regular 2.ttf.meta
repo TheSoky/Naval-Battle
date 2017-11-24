@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bb93aaa5ef637c349a76d5b4c2a245fc
+timeCreated: 1511466044
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Navle Battle
+  fontNames:
+  - Navle Battle
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

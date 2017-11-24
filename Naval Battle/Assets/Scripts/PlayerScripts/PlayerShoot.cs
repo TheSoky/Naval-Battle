@@ -20,18 +20,22 @@ public class PlayerShoot : MonoBehaviour {
 	[SerializeField]
 	private List<ShootingPoint> RightShootingPoints = new List<ShootingPoint>();
 	[SerializeField]
-	private Transform Camera;
-	[SerializeField]
 	private float CannonReloadTime = 2.0f;
 	[SerializeField]
 	private float MinPower = 1000.0f;
 	[SerializeField]
 	private float MaxPower = 1500.0f;
+	[SerializeField]
+	private AudioSource CannonSound;
+	[SerializeField]
+	private AudioClip CannonClip;
 
 	private Transform _transform;
+	private Transform _camera;
 
 	private void Awake() {
 		_transform = transform;
+		_camera = GameObject.FindWithTag("MainCamera").transform;
 	}
 
 	private void Update() {
@@ -57,10 +61,12 @@ public class PlayerShoot : MonoBehaviour {
 
 	private IEnumerator Shoot(int index) {
 
-		if (Camera.localPosition.x >= 0.0f) {
+		if (_camera.localPosition.x >= 0.0f) {
 
 			if (!LeftShootingPoints[index].IsReloading) {
 				float power = Random.Range(MinPower, MaxPower);
+
+				CannonSound.PlayOneShot(CannonClip);
 
 				GameObject cannonballClone = Instantiate(CannonBall, LeftShootingPoints[index].Cannon.position, Quaternion.identity);
 				cannonballClone.transform.SetParent(_transform);
@@ -76,6 +82,8 @@ public class PlayerShoot : MonoBehaviour {
 		else {
 			if (!RightShootingPoints[index].IsReloading) {
 				float power = Random.Range(MinPower, MaxPower);
+
+				CannonSound.PlayOneShot(CannonClip);
 
 				GameObject cannonballClone = Instantiate(CannonBall, RightShootingPoints[index].Cannon.position, Quaternion.identity);
 				cannonballClone.transform.SetParent(_transform);

@@ -86,6 +86,10 @@ public class PlayerMovement : MonoBehaviour {
             MaxXSpeed = _rigidbody.velocity.x;
         }
         */
+		Vector3 ClampedPosition = _transform.position;
+		ClampedPosition.y = Mathf.Clamp(ClampedPosition.y, -0.1015671f, -0.2094269f);
+		_transform.position = ClampedPosition;
+
 	}
 
 }

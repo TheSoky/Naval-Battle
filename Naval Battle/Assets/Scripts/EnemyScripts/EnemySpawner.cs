@@ -30,16 +30,14 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	private void SpawnEnemy() {
-		Vector3 spawnPosition = Vector3.zero;
-		spawnPosition.x = Random.Range(MinSpawnDistance, MaxSpawnDistance);
-		if(Random.value > 0.5f) {
-			spawnPosition.x *= -1;
-		}
+		Vector3 spawnPosition = Random.onUnitSphere;
+
+		spawnPosition.x *= Random.Range(MinSpawnDistance, MaxSpawnDistance);
 		spawnPosition.y = SpawnHeight;
-		spawnPosition.z = Random.Range(MinSpawnDistance, MaxSpawnDistance);
-		if (Random.value > 0.5f) {
-			spawnPosition.z *= -1;
-		}
+		spawnPosition.z *= Random.Range(MinSpawnDistance, MaxSpawnDistance);
+
+		spawnPosition += _player.position;
+
 
 		GameObject enemyClone = Instantiate(EnemiesToSpawn[Random.Range(0, EnemiesToSpawn.Count)].gameObject, spawnPosition, Quaternion.identity);
 		enemyClone.transform.SetParent(EnemiesParent);

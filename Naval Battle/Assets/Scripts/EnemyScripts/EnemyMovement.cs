@@ -58,6 +58,8 @@ public class EnemyMovement : MonoBehaviour {
 			_xSpeed = localVelocity.x;
 			_zSpeed = localVelocity.z;
 			_rigidbody.velocity = _transform.TransformDirection(localVelocity);
+
+			_rigidbody.angularDrag = 1000000.0f;
 		}
 		else {
 
@@ -75,12 +77,19 @@ public class EnemyMovement : MonoBehaviour {
 			localVelocity.x = Mathf.Lerp(_xSpeed, 0.0f, _timer * SlowDownSpeed);
 			_rigidbody.velocity = _transform.TransformDirection(localVelocity);
 
+			_rigidbody.angularDrag = 1000000.0f;
+
 			_timer += Time.deltaTime;
 			if (_timer * TurningAimSpeed > 1 && !_shootingActive) {
 				_shootingActive = true;
 				_enemyShoot.StartShooting();
 			}
 		}
+
+		Vector3 ClampedPosition = _transform.position;
+		ClampedPosition.y = Mathf.Clamp(ClampedPosition.y, -0.1015671f, -0.2094269f);
+		_transform.position = ClampedPosition;
+
 	}
 
 	public void SetTarget(Transform newTarget) {
